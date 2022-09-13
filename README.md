@@ -17,7 +17,7 @@ Generate Terraform modules for Hashicorp-maintained providers/resources.
       (*e.g.* `mv bin/terrawrap /usr/local/bin/terrawrap`)
 1. via `go install`:
    ```shell
-   go install github.com/infracasts/terrawrap@latest
+   go install github.com/infracasts/terrawrap-cli@latest
    ```
   
 ## Usage
