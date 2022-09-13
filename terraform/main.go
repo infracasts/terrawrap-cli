@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/infracasts/terraform-provider-aws-public/provider"
+	"github.com/infracasts/terraform-provider-aws-expose-internal/provider"
 	"log"
 	"os"
 	"reflect"

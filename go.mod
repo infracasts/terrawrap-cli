@@ -1,10 +1,11 @@
-module github.com/infracasts/terrawrap
+module github.com/infracasts/terrawrap-cli
 
 go 1.19
 
 require (
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.21.0
-	github.com/infracasts/terraform-provider-aws-public v0.0.0-20220903141604-e2ec92c6ead1
+	github.com/infracasts/terraform-provider-aws-expose-internal v0.4.290
+	github.com/infracasts/terrawrap v0.6.0
 	github.com/spf13/cobra v1.5.0
 	github.com/spf13/cobra-cli v1.3.0
 	github.com/spf13/viper v1.12.0
@@ -69,6 +70,7 @@ require (
 	github.com/hashicorp/terraform-svchost v0.0.0-20200729002733-f050f53b9734 // indirect
 	github.com/hashicorp/yamux v0.0.0-20181012175058-2f1d1f20f75d // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
+	github.com/infracasts/terraform-provider-aws-public v0.0.0-20220903141604-e2ec92c6ead1 // indirect
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
 	github.com/magiconair/properties v1.8.6 // indirect
 	github.com/mattbaird/jsonpatch v0.0.0-20200820163806-098863c1fc24 // indirect
