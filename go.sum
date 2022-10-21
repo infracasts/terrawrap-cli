@@ -383,8 +383,6 @@ github.com/infracasts/terraform-provider-aws-expose-internal v0.4.290 h1:fe7Rilu
 github.com/infracasts/terraform-provider-aws-expose-internal v0.4.290/go.mod h1:AYJ+3j2GiDOkOYLuD86hDLj5tPgwRBw+MDrlCxWjTZA=
 github.com/infracasts/terraform-provider-aws-public v0.0.0-20220903141604-e2ec92c6ead1 h1:PuWWc5HWP/XzVr2wyUOHdj1hCcdrov+kTckfByZX9OA=
 github.com/infracasts/terraform-provider-aws-public v0.0.0-20220903141604-e2ec92c6ead1/go.mod h1:4hxAZ3U50mq0dgvgty7rrMOP387DtkZ50c0J8w7mEYI=
-github.com/infracasts/terrawrap v0.6.0 h1:qAQyd+6TzGBT1l+1P1IG+W6xgyKIcuy58zISnUA6qh0=
-github.com/infracasts/terrawrap v0.6.0/go.mod h1:M9VaY2CNkV8PT2TFpPlE/zZG031YEozYlZG31cMbh+I=
 github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99 h1:BQSFePA1RWJOlocH6Fxy8MmwDt+yVQYULKfN0RoTN8A=
 github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99/go.mod h1:1lJo3i6rXxKeerYnT8Nvf0QmHCRC1n8sfWVwXF2Frvo=
 github.com/jessevdk/go-flags v1.5.0/go.mod h1:Fw0T6WPc1dYxT4mKEZRfG5kJhaTDP9pj1c2EWnYs/m4=

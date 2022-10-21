@@ -11,7 +11,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/infracasts/terrawrap/tpl"
+	"github.com/infracasts/terrawrap-cli/tpl"
 )
 
 type AttributeList struct {

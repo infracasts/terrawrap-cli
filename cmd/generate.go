@@ -19,7 +19,7 @@ package cmd
 import (
 	"bytes"
 	"fmt"
-	"github.com/infracasts/terrawrap/terraform"
+	"github.com/infracasts/terrawrap-cli/terraform"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"github.com/yuin/goldmark"
@@ -106,9 +106,9 @@ func setAttrPrefix(resourceType, resourceName string) string {
 
 func fetchDocProvider(resourceType string) (*terraform.Provider, error) {
 	var (
-		err                               error
+		err                           error
 		providerName, providerDocPath string
-		tfProvider *terraform.Provider
+		tfProvider                    *terraform.Provider
 	)
 
 	providerTypeFormat := regexp.MustCompile(`(?P<Provider>[A-Za-z0-9]+)_`)
@@ -229,7 +229,7 @@ func parseResource(resourceType, resourceName, varPrefix, attrPrefix string, mod
 
 	source, err = os.ReadFile(resource.DocPath)
 	if err != nil {
-		return resource, fmt.Errorf("failed to walk document tree: %w", err)
+		return resource, fmt.Errorf("failed to read doc file %s: %w", resource.DocPath, err)
 	}
 
 	md := goldmark.New(
@@ -326,7 +326,7 @@ func WalkerFn(source []byte, resource *terraform.TFResource) ast.Walker {
 			// Per github.com/hashicorp/terraform-provider-aws/internal/helper/schema/resource.go
 			// ~line 1200, ID must always be string and isn't defined in the data sources or resource attributes
 			if entry.Schema, ok = resource.Schema[entry.Name]; !ok && entry.Name != "id" {
-				return ast.WalkStop, fmt.Errorf("failed to discover schema for %s.%s", currentSection, entry.Name)
+				log.Printf("[WARN] failed to discover schema for %s.%s, so it was omitted. It may be a sub-resource.", currentSection, entry.Name)
 			}
 		}
 

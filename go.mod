@@ -5,7 +5,6 @@ go 1.19
 require (
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.21.0
 	github.com/infracasts/terraform-provider-aws-expose-internal v0.4.290
-	github.com/infracasts/terrawrap v0.6.0
 	github.com/spf13/cobra v1.5.0
 	github.com/spf13/cobra-cli v1.3.0
 	github.com/spf13/viper v1.12.0
